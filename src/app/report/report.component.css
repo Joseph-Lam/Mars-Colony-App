@@ -1,0 +1,75 @@
+.report-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+
+.report-header {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 10px;
+    font-weight: 100;
+}
+
+.report-span {
+	font-size: 20px;
+}
+
+.form-style {
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	margin: 5px 0;
+	font-size: 24px;
+	color: red;
+	background-color: black;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+option {
+	background-color: white;
+}
+
+
+
+.action-textbox {
+	color: red;
+	font-size: 24px;
+	padding: 10px;
+	margin: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  	color: red;
+  	font-size: 24px;
+  	font-family: 'Roboto', sans-serif;
+}
+
+.report-footer {
+	height: 100px;
+	display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.report-button {
+    font-size: 40px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.report-button-link {
+	text-decoration: none;
+    color: white;
+
+}

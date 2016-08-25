@@ -1,0 +1,45 @@
+.encounter-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.encounter-header {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	padding: 10px;
+    font-weight: 100;
+}
+
+.encounter-span {
+	font-size: 20px;
+}
+
+.encounter-footer {
+	height: 100px;
+	display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.encounter-button {
+    font-size: 40px;
+    font-color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.encounter-button-link {
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
