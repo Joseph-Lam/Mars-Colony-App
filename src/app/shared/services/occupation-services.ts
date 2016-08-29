@@ -10,7 +10,7 @@ export class OccupationService {
 
 	constructor(private http: Http){}
 
-	getOccupations(): Promise<IOccupation[]> {
+	getJobs(): Promise<IOccupation[]> {
 		return this.http.get(this.occupationUrl)
 					.toPromise()
 					.then(response=> response.json().jobs)

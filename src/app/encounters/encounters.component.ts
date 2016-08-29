@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Encounter } from '../shared/models';
+import { Router } from '@angular/router';
+import { EncounterService } from '../shared/services/encounter-services';
+
 
 @Component({
   moduleId: module.id,
@@ -8,7 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncountersComponent implements OnInit {
 
-  constructor() { }
+	public encounters: Encounter[];
+
+
+  constructor(
+  	private router: Router,
+  	private encounterService: EncounterService
+
+  	) {
+  	encounterService.getEncounters().then( encounters => this.encounters = encounters);
+  	 }
 
   ngOnInit() {
   }

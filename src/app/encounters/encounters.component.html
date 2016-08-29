@@ -2,7 +2,12 @@
 	<h1 class="encounter-header">Recent Encounters
 	<br><span class="encounter-span">See an Alien? Report it!</span></h1>
 
-	<div>insert ajax here </div>
+	<div class="encounter-list">
+		<ul>
+			<li *ngFor="let e of encounters">{{e.date}} - {{e.atype}} <br>{{e.action}} </li>
+		</ul>
+
+	</div>
 
 
 	<footer class="encounter-footer">

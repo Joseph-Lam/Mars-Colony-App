@@ -17,10 +17,10 @@ import { ROUTER_DIRECTIVES }  from '@angular/router';
 export class AppComponent {
 
   constructor(alienService: AlienService, occupationService: OccupationService, colonistService: ColonistService, encounterService: EncounterService) {
-  	console.log(alienService);
-	console.log(occupationService);
-	console.log(colonistService);
-	console.log(encounterService);
+    console.log(alienService);
+	  console.log(occupationService);
+	  console.log(colonistService);
+	  console.log(encounterService);
 	
 	}
 }

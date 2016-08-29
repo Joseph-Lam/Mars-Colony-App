@@ -1,6 +1,6 @@
 export interface IAlien {
 	Atype: string;
-	submitted_by: number;
+	submitted_by: string;
 	description: string;
 }
 
@@ -9,15 +9,26 @@ export interface IOccupation {
 	description: string;
 }
 
-export interface IColonist {
-	name: string;
-	job: IOccupation;
-	age: number;
+export class Colonist {
+	constructor(
+
+		public name: string,
+		public age: string,
+		public job_id: string
+		) {}
 }
 
-export interface IEncounters {
-	date: number;
-	colonist_id: number;
-	atype: string;
-	action: string;
+export class Encounter{
+    constructor( public atype: string,
+                 private date: string,
+                 public action: string,
+                 public colonist_id: string){
+        
+        this.date = this.formattedDate;
+    }
+    
+    get formattedDate(): string{
+        let date = new Date();
+        return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+    }
 }
