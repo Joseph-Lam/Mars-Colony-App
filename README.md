@@ -29,3 +29,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Personal Learnings
+
+Making this app was a great first experience using angular and learning how to make forms that implements GET and POST HTTP requests. The learning experience was mostly from recognizing patterns in the code and making changes accordingly to suit the other pages. This helped me understand more about the basic Angular features such as ngForm, ngModel, etc. As the final result, the app can save a colonist's information as an object, save an alien encounter, fetch and post a record of alien encounters on a page, and a form to submit a new encounter report and add it onto the database
