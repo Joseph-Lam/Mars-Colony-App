@@ -2,7 +2,7 @@
 	<h1 class="arrival-header">Register</h1>
 
 
-	<form class="form-style" (ngSubmit)="onSubmit()" #arrivalForm="ngForm" name="form">
+	<form class="form-container" (ngSubmit)="onSubmit()" #arrivalForm="ngForm" name="form">
 		<fieldset>
 			<input [(ngModel)]="colonist.name" class="form-style" type="text" name="name" placeholder="Name" required>
 			<input [(ngModel)]="colonist.age" class="form-style" type="number" name="Age" placeholder="Age" required>
@@ -11,11 +11,11 @@
 
 				<option value="(none)">Select Occupation</option>
 				<option *ngFor="let o of occupations" [value]="o.id"> {{o.name}}</option>
-			</select>
+				</select>
 			
 				<fieldset>
-				<button [disabled]="noOccupation || !arrivalForm.form.valid" class="check-button" type="submit">Check in</button>
-			</fieldset>
+					<button [disabled]="noOccupation || !arrivalForm.form.valid" class="check-button" type="submit">Check in</button>
+				</fieldset>
 			
 		</fieldset>
 	</form>

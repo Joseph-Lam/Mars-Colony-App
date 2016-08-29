@@ -14,15 +14,28 @@
 	font-weight: 500;
 }
 
+.form-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+}
+
+
+input, button {
+	width: 100%;
+}
+
 .form-style {
+	display: flex;
 	font-family: 'Roboto', sans-serif;
-	padding: 10px;
+	padding: 10px 0;
 	margin: 5px 0;
 	font-size: 24px;
 	color: red;
 	background-color: black;
 	border: none;
 	border-bottom: 1px solid white;
+	width: 100%;
 }
 
 option {
@@ -41,6 +54,4 @@ option {
 	border: none;
 	margin-top: 90px;
 	cursor: pointer;
-	display: flex;
-    justify-content: center;
 }
