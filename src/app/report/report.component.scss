@@ -15,16 +15,29 @@
 	color: white;
 	padding: 10px;
     font-weight: 100;
+    margin-top: 30px;
+}
+
+.report-form-container {
+	display: flex;
+	justify-content: center;
+	margin: 0 20px;
+}
+
+.report-fieldset {
+	display: flex;
+	width: 100%;
 }
 
 .report-span {
 	font-size: 20px;
 }
 
-.form-style {
+.report-select {
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
 	padding: 10px;
-	margin: 5px 0;
+	margin: 10px 0;
 	font-size: 24px;
 	color: red;
 	background-color: black;
@@ -36,14 +49,11 @@ option {
 	background-color: white;
 }
 
-
-
 .action-textbox {
 	color: red;
 	font-size: 24px;
-	padding: 10px;
-	margin: 10px;
 	font-family: 'Roboto', sans-serif;
+	width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -66,10 +76,6 @@ option {
     cursor: pointer;
     text-decoration: none;
     color: white;
-}
-
-.report-button-link {
-	text-decoration: none;
-    color: white;
-
+    width: 100%;
+    margin: 20px 0;
 }

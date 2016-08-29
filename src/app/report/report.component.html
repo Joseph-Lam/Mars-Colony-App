@@ -2,20 +2,11 @@
 	<h1 class="report-header">Report Encounters
 		<br><span class="report-span">Safety on Mars is your responsibility</span></h1>
 
-	<!-- <select class="form-style" name="alien-type" required>
-		<option value="" disabled>Select Alien Type</option>
-		<option value="">Ectomorph</option>
-		<option value="">Endomorph</option>
-		<option value="">Green Man</option>
-		<option value="">Grey Man</option>
-		<option value="">Big-nose-flat-head</option>
-		<option value="">Octospider</option>
-	</select> -->
-	<form (ngSubmit)="onSubmit()" #alienForm="ngForm" name="alienForm">
-		<fieldset>
-			<select [(ngModel)]="encounter.atype" class="form-style" name="alien-type" >
+	<form (ngSubmit)="onSubmit()" #alienForm="ngForm" name="alienForm" class="report-form-container">
+		<fieldset class="report-fieldset">
+			<select [(ngModel)]="encounter.atype" class="report-select" name="alien-type" >
 
-				<option value="(none)" >Select Alien Type </option>
+				<option value="(none)">Select Alien Type</option>
 				<option *ngFor="let a of aliens" [value]="a.type"> {{a.type}}</option>
 			</select>
 
