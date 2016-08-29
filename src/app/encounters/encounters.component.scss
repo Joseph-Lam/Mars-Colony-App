@@ -12,8 +12,9 @@
 	justify-content: center;
 	align-items: center;
 	color: black;
-	padding: 10px;
+	padding: 45px;
     font-weight: 100;
+    margin: 30px;
 }
 
 .encounter-span {
@@ -22,16 +23,19 @@
 
 .encounter-list {
 	overflow: scroll;
-	height: 200px;
-	
+	height: 1000px;
+	ul {
+		padding: 20px;
+		font-family: 'Roboto', sans-serif;
+	}
 }
 
 
 .encounter-footer {
-	height: 100px;
 	display: flex;
     justify-content: center;
     background-color: black;
+    height: 60vh;
 }
 
 .encounter-button {
